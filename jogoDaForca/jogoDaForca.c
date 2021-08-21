@@ -145,12 +145,14 @@ void adicionapalavra() {
 
     printf("Você deseja adicionar uma nova palavra no jogo (S/N)?");
     scanf(" %c", &quer);
+    quer = toupper(quer);
 
     if(quer == 'S') {
         char novapalavra[TAMANHO_PALAVRA];
 
-        printf("Digite a nova palavra, em letras maiúsculas: ");
+        printf("Digite a nova palavra: ");
         scanf("%s", novapalavra);
+        strupr(novapalavra);
 
         FILE* f;
 
