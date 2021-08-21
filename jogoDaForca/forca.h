@@ -1,10 +1,10 @@
 
-int ganhou();
+#define TAMANHO_PALAVRA 20
+
 void abertura();
-int enforcou();
 void chuta();
-int jachutou(char letra);
 void desenhaforca();
 void escolhepalavra();
-void adicionapalavra();
-
+int acertou();
+int enforcou();
+int jachutou(char letra);
